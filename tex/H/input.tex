@@ -1,15 +1,11 @@
-The input consists of five parts.
-The first part contains one line, and that line 
-contains two positive integers $n$ and $m$. 
-$n$ is the number of nodes, and $m$ is the number of edges.
-The second part contains $m$ lines.
-Each of them contains two integers $u$ and $v$, indicating an edge $\{u, v\}$
-of the given graph.
-The third part contains one line.
-That line consists of $n$ space-separated integers $x_1,x_2,\dots,x_n$. 
-For any $k\in\{1,2,\dots,n\}$, if the node value $V_k$ is missing, 
-$x_k$ will be \verb+-1+; otherwise, $V_k$ is $x_k$.
-The fourth part contains one integer $q$, indicating the number of constraints.
-The fifth part contains $q$ lines, and each of them contains
-five space-separated integers $t, u, i, v, j$ indicating that 
-$(t, u, i, v, j)$ is a constraint.
+The first line contains an integer $n$.
+
+The following $2n$ lines indicate the status of the imprints.
+For each $i = 1,2,\cdots,n$, two lines follow, indicating the status of the imprints of the $i$-th layer.
+The format for the $i$-th layer is the following:
+
+\begin{itemize}
+\item Both of the two lines begin with $n-i$ spaces.
+\item Exactly $2i$ characters follow the spaces in the first line. Each character represents an imprint. \texttt{\textbackslash} or \texttt{/} denotes a charged imprint, while \texttt{.} denotes an uncharged imprint.
+\item Exactly $2i$ characters follow the spaces in the second line. A consecutive pair of characters represents an imprint. \texttt{..} denotes an uncharged imprint, while \texttt{--} denotes a charged imprint.
+\end{itemize}

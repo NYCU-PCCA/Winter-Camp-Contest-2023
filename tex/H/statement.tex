@@ -1,26 +1,28 @@
-You are given a simple undirected graph consisting of $n$ nodes and $m$ edges. 
-The nodes are numbered from $1$ to $n$, 
-and the edges are numbered from $1$ to $m$.
-Node $i$ has a non-negative integer value $V_i$ and the weight $W_{u,v}$ of 
-edge $\{u, v\}$ is defined as $\left\|V_u\oplus V_v\right\|$
-where $\oplus$ is the exclusive-or operator (equivalent to \verb+^+ in C) and
-$\|x\|$ is the number of set bits in the binary representation non-negative
-integer $x$
+The PCCA kingdom has a world heritage site that everybody knows: The Triangular Cave.
+Legend says there was an ancient civilization of triangles in the cave, and they left a powerful relic somewhere nobody knows.
+One day, you find a mysterious triangular stone plate, and it turns out to be the legendary relic of the Holy Triangle!
 
-The node values $V_1,V_2,\dots,V_n$ must satisfy $q$ constraints.
-Each of the constraints can be represented as 
-a 5-tuple $(t,u,i,v,j)$.
-\begin{itemize}
-\item if $t = 0$, then $getBit(V_u, i) = getBit(V_v, j)$
-\item if $t = 1$, then $getBit(V_u, i) \neq getBit(V_v, j)$
-\end{itemize}
-where the function $getBit(x, i)$ returns the $(i+1)$-th least significant
-bit of $x$. For examples, $getBit(11, 0)$ is $1$ and $getBit(11,2)=0$. 
-In the C programming language, $getBit(x, i)$ can be computed by 
-\verb+((x >> i) & 1U)+ if $x$ is a 32-bit unsigned integer 
-and $i$ is a non-negative integer at most $31$.
+The relic is divided into $n$ layers of small triangles, and the imprints enclose the small triangles.
+You notice that some imprints have been charged with ancient power while others have not.
+To fully empower the relic, you must restore it by making all the imprints charged.
 
-Unfortunately, some node values are missing now. 
-Your task is to assign new values to them to minimize 
-$\sum_{\{u,v\} \in E}W_{u,v}$ without violating any given constraint. 
-Please write a program to help yourself to complete this task.
+However, you cannot charge the imprints directly.
+Instead, you can replace the small triangle with the energy runestones you prepared beforehand.
+An energy runestone is also in the shape of a triangle and can charge the imprints on the three sides of it once it is put onto the relic.
+
+The figures below show examples of a relic before and after restoration:
+
+\begin{figure}[h]
+\center
+\includegraphics[width=0.35\textwidth]{image/relic1.png}
+\caption{A partially charged relic before restoration. The blue edges are charged imprints and the grey edges are imprints not charged yet.}
+\end{figure}
+\begin{figure}[h]
+\center
+\includegraphics[width=0.35\textwidth]{image/relic2.png}
+\caption{A fully charged relic after restoration. After putting 4 runestones onto the relic, all of the imprints are charged.}
+\end{figure}
+
+\newpage
+
+Here comes the problem: What is the minimum number of energy runestones required to empower the relic fully?
