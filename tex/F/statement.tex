@@ -1,22 +1,8 @@
-Suppose you are given an array of $n$ entries
-where each array entry is either $0$ or $1$.
-For any pair $(\ell,r)$ such that $1\le \ell \le r\le n$, 
-$[a[\ell],a[\ell+1],\dots,a[r]]$ is a subarray of the array
-$[a[1], a[2], \dots, a[n]]$.
-An alternating subarray $[a[\ell],a[\ell+1],\dots,a[r]]$ of 
-$[a[1], a[2], \dots, a[n]]$
-if $a[\ell]\neq a[\ell+1]\neq \cdots \neq a[r]$. I.e., every entry
-in the subarray is different from its neighbors in the subarray.
-Since the definition of alternating subarrays only considers the entries in
-the subarrays, $[1,0,1]$ is still an alterating subarray of $[1,1,0,1,1]$.
+As a PCCA winter camp staff member, you have been tasked with creating teams of $m$ members from a list of $n$ participants.
+Each participant has $m$ skills; the $i$-th participant has skill level $a_{i,j}$ for the $j$-th skill for $i = 1,2,\ldots,n$ and $j = 1,2,\ldots,m$.
 
-In this problem, two types of operations will be applied to the given array.
-\begin{itemize}
-\item $1~\ell~r$: for every $i\in[\ell,r]$, change $a[i]$ into $1-a[i]$.
-\item $2~\ell~r$: report the total number of pairs $(x, y)$ such that 
-$\ell \leq x \leq y \leq r$ and subarray 
-$[a[x],a[x+1],\dots,a[y]]$ is an alternating subarray.
-\end{itemize}
+To facilitate team selection, you define the metrics for the skill levels.
+For a team $b$ consisting of $m$ members $b_1,b_2,\ldots,b_m$, define the \textbf{strength} of $S$ as $\displaystyle\max_{p \in P_m} \sum_{i=1}^{m} a_{b_i,p_i}$, where $P_m$ is the set of all possible permutations of $1,2,\ldots,m$.
+That is, the strength of a team is the maximum possible sum of skill levels, considering all possible combinations of the skills from the $m$ team members.
 
-Please write a program to maintain the given array.
-Your program must report the numbers efficiently.
+Your goal is to find the best team by maximizing the team's strength.
