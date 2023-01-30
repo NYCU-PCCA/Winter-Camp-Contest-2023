@@ -1,23 +1,5 @@
-JavaScript is one of the most important computer languages now.
-It is high-level and multi-paradigm.
-It supports functional and imperative programming styles.
-However, the ICPC World Finals does not offer JavaScript
-for problem solving.
+Nancy has a huge collection of $n$ positive integers $a_1,a_2,\cdots,a_n$. Unfortunately, she is not satisfied since there are duplicate integers in them.
 
-JavaScript is considered as a weakly typed language.
-It sometimes implicitly converts values of one type into another type.
-For example, the minus operator (\verb|-|) does not have any meaning on strings;
-it is defined to operate on numbers. 
-When the minus operator is applied on two strings, JavaScript will convert
-the operands from strings into numbers and then apply the minus operation.
-That is why \verb|"2" + "2" - "2"| evaluates to \verb+20+ in JavaScript.
-Moreover,
-JavaScript converts a string into \verb+NaN+ 
-(Not-a-Number) if the string does not represent a number. 
-If any operand of a minus operation is \verb+NaN+, 
-then the result of the operation must be \verb+NaN+.
-For example, \verb|"a" + "2"| is \verb+NaN+.
+To make Nancy happy, you can perform the following operation any number of times (possibly zero): Select an integer $i$ from $1$ to $n$ (inclusive), and add $1$ to $a_i$. 
 
-Given two strings \verb+x+ and \verb+y+, 
-please write a program to compute the result 
-of \verb|x - y| in JavaScript.
+What is the minimum number of operations required so that all the integers in $a_1,a_2,\cdots,a_n$ are distinct (in other words, all integers are different)?
