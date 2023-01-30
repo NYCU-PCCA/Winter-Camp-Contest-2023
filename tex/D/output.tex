@@ -1,3 +1,12 @@
-Output the probability that your seat is taken by another passenger.
-It is acceptable if the difference between your output and the answer is
-less than $10^{-6}$.
+For each testcase, print an integer $k$ denoting the number of cards given to Laffey (which is also the length of $op$).
+
+$k$ lines follow.
+In the $i$-th line, print two integers $x_i,y_i$ denoting the $i$-th pair given to Laffey.
+
+Your solution would be considered correct if it satisfys all the following conditions:
+\begin{itemize}
+    \item $0 \leq k \leq n$
+    \item $1 \leq x_i,y_i \leq n$ for $i = 1,2,\ldots,k$
+    \item When sorted in lexicographical order, the sequence of operations will sort $a$ in increasing order.
+\end{itemize}
+If there are multiple possible solutions, print any.

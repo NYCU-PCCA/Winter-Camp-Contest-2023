@@ -1,28 +1,16 @@
-Due to COVID-19, social distancing is applied in our daily life to prevent
-the spread of the disease. It changes our living styles a lot, especially 
-the way of traveling. 
-Now, many carriers cancel non-reserved seats and introduce seating rules 
-to ensure that the distance between any two passengers is long enough.
+Neko-chan and Laffey are a famous duo of magicians in the PCCA kingdom.
+Recently they came up with the following new trick for their next show.
 
-On your trip to the 2022 ICPC World Finals, you take a flight.
-The airplane provides $n$ reserved seats to $n$ passengers.
-The passengers must queue up first; then they board the airplane one by one.
-You are the last passenger to board, since you are at the end
-of the queue.
-Unfortunately, the first passenger is drunk.
-The drunk passenger randomly goes to another passenger's seat 
-and then sits there.
-You may assume the following.
-\begin{enumerate}
-\item The drunk passenger never takes their own seat.
-\item The probability of any other seat taken by the drunk passenger is uniform.
-\end{enumerate}
+In the beginning, Neko-chan will invite an audience to write down a random permutation $a=[a_1,a_2,\ldots,a_n]$ of $1,2,\ldots,n$ without showing it to Laffey.
+After seeing the permutation, Neko-chan will hand out a deck of cards (at most $n$ cards, otherwise, it would be too apparent that they are cheating) to another audience.
+Neko-chan will ask the audience to shuffle the cards in any order and hand it to Laffey.
+Here comes the miracle: Laffey then can read out a sequence of operations to swap elements in $a$, and the array $a$ would be sorted in increasing order!
 
-Luckily, all the other passengers are not drunk. However, they don't want 
-to move any passenger from a taken seat. If a passenger's seat has been taken 
-by another passenger when boarding, the passenger would randomly take a 
-vacant seat with equal probability. 
-Otherwise, the passengers just take their own seats.
+If you wonder how this trick works, here is the secret.
+After the array $a$ is written, Neko-chan secretly writes down a pair of integers $(x_i,y_i)$ on each card.
+The pair $(x_i,y_i)$ denotes that Laffey have to swap $a_{x_i}$ and $a_{y_i}$.
+When Laffey receives the deck of cards, she only has to sort the pairs on each card lexicographically  (that is, sort the pairs in $op$) and read out the sorted pairs.
+In other words, Neko-chan gives Laffey an array of integer pairs $op$ (which is also a sequence of operations); all Laffey has to do is sort $op$.
 
-Please write a program to compute the probability that your seat is taken
-by another passenger.
+To make the trick work, Neko-chan requires an efficient algorithm to help him produce the array of pairs $op$.
+This task is too complex for Neko-chan. Can you help him?
