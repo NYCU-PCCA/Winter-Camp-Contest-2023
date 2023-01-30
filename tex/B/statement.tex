@@ -1,17 +1,12 @@
-A divisor of a positive integer $n$ is an integer $d$ where $m=\frac{n}{d}$ 
-is an integer. 
-In this problem, we define the aliquot sum $s(n)$ of a positive integer $n$ 
-as the sum of all divisors of $n$ other than $n$ itself. 
-For examples, $s(12)=1+2+3+4+6=16$, $s(21)=1+3+7=11$, and $s(28)=1+2+4+7+14=28$.
+Brian is a fan of the double-sided octopus mascots.
+He visits a fair with $n$ stands providing numerous octopus double-sided mascots to collect as many mascots as possible.
 
-With the aliquot sum, we can classify positive integers into three types: 
-abundant numbers, deficient numbers, and perfect numbers.
-The rules are as follows.
+The stands in the fair are numbered from $1$ to $n$, and Brian will also visit the stands in this order.
+When visiting the $i$-th stand, he can do exactly one of the following:
 \begin{enumerate}
-\item A positive integer $x$ is an abundant number if $s(x)>x$.
-\item A positive intewer $y$ is a deficient number if $s(y)<y$.
-\item A positive integer $z$ is a perfect number if $s(z)=z$.
+    \item Pay $a_i$ dollars to obtain $a_i$ tokens. Brian can hold at most $m$ tokens at a time. If Brian earns more than $m$ at any time, the rest of the tokens must be returned to the stand.
+    \item Pay $b_i$ tokens to obtain $b_i$ octopus double-sided mascots.
 \end{enumerate}
-
-You are given a list of positive integers. 
-Please write a program to classify them.
+At this moment, Brian has no tokens.
+What is the maximum number of octopus double-sided mascots he can receive after visiting the $n$ stands?
+You may assume that Brian always has enough money to pay for the tokens.
