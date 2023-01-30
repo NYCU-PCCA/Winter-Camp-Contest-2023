@@ -1,23 +1,9 @@
-JavaScript is one of the most important computer languages now.
-It is high-level and multi-paradigm.
-It supports functional and imperative programming styles.
-However, the ICPC World Finals does not offer JavaScript
-for problem solving.
+You are given an undirected graph $G$ of $n$ vertices and $m$ edges.
+The vertices in $G$ are numbered from $1$ to $n$. For each vertex $i$ in $G$, a weight $a_i$ is associated with it.
 
-JavaScript is considered as a weakly typed language.
-It sometimes implicitly converts values of one type into another type.
-For example, the minus operator (\verb|-|) does not have any meaning on strings;
-it is defined to operate on numbers. 
-When the minus operator is applied on two strings, JavaScript will convert
-the operands from strings into numbers and then apply the minus operation.
-That is why \verb|"2" + "2" - "2"| evaluates to \verb+20+ in JavaScript.
-Moreover,
-JavaScript converts a string into \verb+NaN+ 
-(Not-a-Number) if the string does not represent a number. 
-If any operand of a minus operation is \verb+NaN+, 
-then the result of the operation must be \verb+NaN+.
-For example, \verb|"a" + "2"| is \verb+NaN+.
-
-Given two strings \verb+x+ and \verb+y+, 
-please write a program to compute the result 
-of \verb|x - y| in JavaScript.
+Given an integer $k$, define a $k$-restricted induced subgraph of $G$ are induced subgraphs satisfying all the following conditions:
+\begin{itemize}
+\item The induced subgraph is connected.
+\item For every pair of vertices $u,v$ in the induced subgraph, $|a_u - a_v| \leq k$ should hold. Note that an edge does not necessarily connect $u$ and $v$.
+\end{itemize}
+What is the maximum possible number of vertices in a $k$-restricted induced subgraph of $G$?
