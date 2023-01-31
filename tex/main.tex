@@ -39,9 +39,9 @@
 \usepackage{amsmath}
 %\setlength{\mathindent}{0pt}
 
-\usepackage{fontspec}
-\usepackage{xeCJK}
-\setCJKmainfont{Noto Sans CJK TC}
+% \usepackage{fontspec}
+% \usepackage{xeCJK}
+% \setCJKmainfont{Noto Sans CJK TC}
 
 \usepackage{fancyhdr}
 \fancypagestyle{document}
@@ -71,15 +71,19 @@
 \newcommand{\testdata}[1]
 {
 	\stepcounter{ncase}
-	\IfFileExists{../problem/#1/data/sample/\arabic{ncase}.in}
+	\IfFileExists{../problem/#1/data/sample/0\arabic{ncase}.in}
     {
 		\vspace{-1mm}
 		%\begin{paracol}{2}
 			\subsection*{Sample Input \arabic{ncase}}
-			\lstinputlisting{../problem/#1/data/sample/\arabic{ncase}.in}
+            \begin{minipage}{\linewidth}
+                \lstinputlisting{../problem/#1/data/sample/0\arabic{ncase}.in}
+            \end{minipage}
 			%\switchcolumn
 			\subsection*{Sample Output \arabic{ncase}}
-			\lstinputlisting{../problem/#1/data/sample/\arabic{ncase}.ans}
+            \begin{minipage}{\linewidth}
+                \lstinputlisting{../problem/#1/data/sample/0\arabic{ncase}.ans}
+            \end{minipage}
 		%\end{paracol}
 		\testdata{#1}
     }{}
