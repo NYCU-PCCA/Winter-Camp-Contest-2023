@@ -1,56 +1,42 @@
 A:
   probid: pcca-2023-atcg
-  color: '#000000'
   samples: 1
 B:
   probid: pcca-2023-shopping
-  color: '#000000'
   samples: 2
 C:
   probid: pcca-2023-tree-swap
-  color: '#000000'
   samples: 3
 D:
   probid: pcca-2023-sort3
-  color: '#000000'
   samples: 1
 E:
   probid: pcca-2023-exterior
-  color: '#000000'
   samples: 3
 F:
   probid: pcca-2023-team-contest
-  color: '#000000'
   samples: 1
 G:
   probid: pcca-2023-asm
-  color: '#000000'
   samples: 2
 H:
   probid: pcca-2023-relic
-  color: '#000000'
   samples: 1
 I:
   probid: pcca-2023-interval-cover
-  color: '#000000'
   samples: 1
 J:
   probid: pcca-2023-match
-  color: '#000000'
   samples: 1
 K:
   probid: pcca-2023-abyss
-  color: '#000000'
   samples: 3
 L:
   probid: pcca-2023-separation
-  color: '#000000'
   samples: 2
 M:
   probid: pcca-2023-grades
-  color: '#000000'
   samples: 2
 N:
   probid: pcca-2023-distinct-elements
-  color: '#000000'
   samples: 3

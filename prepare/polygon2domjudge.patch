@@ -1,8 +1,19 @@
 diff --git a/p2d/main.py b/p2d/main.py
-index ad8cc5d..508dcbc 100644
+index ad8cc5d..6c69b4f 100644
 --- a/p2d/main.py
 +++ b/p2d/main.py
-@@ -141,7 +141,7 @@ class OutputValidator(ProblemAspect):
+@@ -92,8 +92,9 @@ class ProblemConfig(ProblemAspect):
+             '  probid = %s' % self.probid,
+             '  name = %s' % self.name.replace("'", "`"),
+             '  timelimit = %s' % self.timelimit,
+-            '  color = %s' % self.color
+         ]
++        if self.color:
++            ini_content.append('  color = %s' % self.color)
+         [*map(self.info, ini_content)]
+         with open(ini_file, 'w', encoding='utf-8') as f:
+             f.writelines(map(lambda s: s.strip() + '\n', ini_content))
+@@ -141,7 +142,7 @@ class OutputValidator(ProblemAspect):
                  self.info('Use custom interactor')
                  data['validation'] = 'custom interactive'
                  yaml.safe_dump(data, yaml_file)
@@ -11,7 +22,7 @@ index ad8cc5d..508dcbc 100644
                  shutil.copyfile(testlib, os.path.join(self._problem.tmpdir,
                                                        'output_validator', 'interactor', 'testlib.h'))
                  shutil.copyfile(self._source, os.path.join(self._problem.tmpdir,
-@@ -165,7 +165,7 @@ class OutputValidator(ProblemAspect):
+@@ -165,7 +166,7 @@ class OutputValidator(ProblemAspect):
                      self.info('Use custom checker')
                      data['validation'] = 'custom'
                      yaml.safe_dump(data, yaml_file, default_flow_style=False)
@@ -21,7 +32,7 @@ index ad8cc5d..508dcbc 100644
                                                            'output_validator', 'checker', 'testlib.h'))
                      shutil.copyfile(self._source, os.path.join(self._problem.tmpdir,
 diff --git a/p2d/problems.py b/p2d/problems.py
-index a215ffc..4c15ca5 100644
+index a215ffc..4352d5c 100644
 --- a/p2d/problems.py
 +++ b/p2d/problems.py
 @@ -24,7 +24,7 @@ class Problem(object):
@@ -33,3 +44,14 @@ index a215ffc..4c15ca5 100644
              raise ProblemConfigError('Invalid Problem Name "%s"' % problem_name)
          self.problem_name = problem_name
          self.probid = None
+@@ -80,8 +80,8 @@ class Problem(object):
+         """
+         if self.probid is None:
+             raise ProblemConfigError('problem %s has no probid' % self.problem_name)
+-        if self.color is None:
+-            raise ProblemConfigError('problem %s has no color' % self.problem_name)
++        #  if self.color is None:
++        #      raise ProblemConfigError('problem %s has no color' % self.problem_name)
+         if self.samples is None:
+             raise ProblemConfigError('problem %s has no sample' % self.problem_name)
+ 
