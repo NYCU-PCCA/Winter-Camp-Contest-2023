@@ -1,0 +1,13 @@
+Carol is a prestigious painter in the PCCA Kingdom.
+Unfortunately, she has to spend time in quarantine during the pandemic, so she comes up with the game described below.
+
+At the beginning of the game, she paints a tree with $n$ nodes numbered $1,2,\ldots,n$.
+There are $n-1$ edges, $i$-th of which is $(u_i,v_i)$.
+She also draws a picture with $n$ squares numbered $1,2,\ldots,n$.
+The $i$-th square is colored with color $a_i = i$.
+
+Then she can perform the following operation any number of times (possibly zero):
+Select an existing edge $(u_i,v_i)$ from the tree, swap the colors in the cell $u_i$ and $v_i$ (that is, swap $a_{u_i}$ and $a_{v_i}$) and remove the edge $(u_i,v_i)$ from the tree.
+
+How many different pictures can be painted after performing any number of operations?
+Two pictures are considered different if a square $i$ is painted in different colors in the two pictures.

@@ -1,0 +1,23 @@
+Ian has a multiset $S$ of intervals on the number axis, $i$-th of which is $[l_i,r_i]$.
+Surprisingly, he found that every interval is within the $[0,l]$ range, where $l$ is Ian's favorite positive integer.
+
+As Ian thinks everything should be perfectly balanced, he wants to add the minimum number of intervals to $S$, so that the same number of intervals covers every non-integer coordinate between $0$ and $l$.
+The newly added intervals should also be within the $[0,l]$ range.
+Let $f(S)$ be the minimum number of intervals to be added.
+Note that $S$ is not changed after calculating $f(S)$.
+
+For example, consider the case that $S$ contains intervals $[0,3], [2,8], [7,10]$ and $l=10$.
+Then Ian can add $3$ intervals $[0,2],[3,7],[8,10]$ to $S$, and then every non-integer coordinate between $0$ and $10$ are covered by $2$ intervals.
+Therefore $f(S) = 3$ in this case.
+
+Due to the instability of $S$, Ian observes that $S$ is prone to change.
+He wonders if the value of $f(S)$ can be changed.
+More formally, there are $q$ queries of three types:
+
+\begin{enumerate}
+\item $1\ ql_i\ qr_i$ — Adding an interval $[ql_i,qr_i]$ to $S$.
+\item $2\ ql_i\ qr_i$ — Removing an interval $[ql_i,qr_i]$ to $S$. It is guaranteed that $[ql_i,qr_i]$ appears in $S$.
+\item $3$ — Ian wants to know the value of $f(S)$.
+\end{enumerate}
+
+Can you help Ian answer all the queries?
