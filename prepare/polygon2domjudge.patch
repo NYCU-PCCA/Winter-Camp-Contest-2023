@@ -1,0 +1,35 @@
+diff --git a/p2d/main.py b/p2d/main.py
+index ad8cc5d..508dcbc 100644
+--- a/p2d/main.py
++++ b/p2d/main.py
+@@ -141,7 +141,7 @@ class OutputValidator(ProblemAspect):
+                 self.info('Use custom interactor')
+                 data['validation'] = 'custom interactive'
+                 yaml.safe_dump(data, yaml_file)
+-                self._problem.ensure_dir('output_validators', 'interactor')
++                self._problem.ensure_dir('output_validator', 'interactor')
+                 shutil.copyfile(testlib, os.path.join(self._problem.tmpdir,
+                                                       'output_validator', 'interactor', 'testlib.h'))
+                 shutil.copyfile(self._source, os.path.join(self._problem.tmpdir,
+@@ -165,7 +165,7 @@ class OutputValidator(ProblemAspect):
+                     self.info('Use custom checker')
+                     data['validation'] = 'custom'
+                     yaml.safe_dump(data, yaml_file, default_flow_style=False)
+-                    self._problem.ensure_dir('output_validators', 'checker')
++                    self._problem.ensure_dir('output_validator', 'checker')
+                     shutil.copyfile(testlib, os.path.join(self._problem.tmpdir,
+                                                           'output_validator', 'checker', 'testlib.h'))
+                     shutil.copyfile(self._source, os.path.join(self._problem.tmpdir,
+diff --git a/p2d/problems.py b/p2d/problems.py
+index a215ffc..4c15ca5 100644
+--- a/p2d/problems.py
++++ b/p2d/problems.py
+@@ -24,7 +24,7 @@ class Problem(object):
+             problem_spec (dict): dictionary containing the specification
+                 of the problem.
+         """
+-        if not re.match('^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$', problem_name):
++        if not re.match('^[a-zA-Z0-9]([a-zA-Z0-9_.-]*[a-zA-Z0-9])?$', problem_name):
+             raise ProblemConfigError('Invalid Problem Name "%s"' % problem_name)
+         self.problem_name = problem_name
+         self.probid = None
