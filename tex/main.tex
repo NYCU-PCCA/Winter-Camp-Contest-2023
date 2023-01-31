@@ -70,15 +70,15 @@
 \newcommand{\testdata}[1]
 {
 	\stepcounter{ncase}
-	\IfFileExists{../#1/data/sample/\arabic{ncase}.in}
+	\IfFileExists{../problem/#1/data/sample/\arabic{ncase}.in}
     {
 		\vspace{-1mm}
 		%\begin{paracol}{2}
 			\subsection*{Sample Input \arabic{ncase}}
-			\lstinputlisting{../#1/data/sample/\arabic{ncase}.in}
+			\lstinputlisting{../problem/#1/data/sample/\arabic{ncase}.in}
 			%\switchcolumn
 			\subsection*{Sample Output \arabic{ncase}}
-			\lstinputlisting{../#1/data/sample/\arabic{ncase}.ans}
+			\lstinputlisting{../problem/#1/data/sample/\arabic{ncase}.ans}
 		%\end{paracol}
 		\testdata{#1}
     }{}
