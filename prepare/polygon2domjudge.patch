@@ -1,16 +1,18 @@
 diff --git a/p2d/main.py b/p2d/main.py
-index ad8cc5d..a1e2039 100644
+index ad8cc5d..15a403a 100644
 --- a/p2d/main.py
 +++ b/p2d/main.py
-@@ -70,7 +70,7 @@ class ProblemConfig(ProblemAspect):
+@@ -70,8 +70,8 @@ class ProblemConfig(ProblemAspect):
                  self.warning('Can not find config of %s, use default.' % problem.shortname)
                  config = ProblemConfig.__DEFAULT_CONFIG
              self._data = xml.etree.ElementTree.parse(self.configfile)
 -            self.name = self._data.find('names').find('name').attrib['value']
+-            self.timelimit = str(float(self._data.find('judging').find('testset').find('time-limit').text) / 1000.0)
 +            self.name = config.name or self._data.find('names').find('name').attrib['value']
-             self.timelimit = str(float(self._data.find('judging').find('testset').find('time-limit').text) / 1000.0)
++            self.timelimit = config.timelimit or str(float(self._data.find('judging').find('testset').find('time-limit').text) / 1000.0)
              self.checker = self._data.find('assets').find('checker')
              self.interactor = self._data.find('assets').find('interactor')
+             self.probid = config.probid
 @@ -92,8 +92,9 @@ class ProblemConfig(ProblemAspect):
              '  probid = %s' % self.probid,
              '  name = %s' % self.name.replace("'", "`"),
@@ -47,7 +49,7 @@ index ad8cc5d..a1e2039 100644
  
  class TestCases(ProblemAspect):
 diff --git a/p2d/problems.py b/p2d/problems.py
-index a215ffc..262822b 100644
+index a215ffc..1787527 100644
 --- a/p2d/problems.py
 +++ b/p2d/problems.py
 @@ -13,7 +13,7 @@ class Problem(object):
@@ -55,7 +57,7 @@ index a215ffc..262822b 100644
      """
  
 -    __KEYS = ['problem_name', 'probid', 'color', 'samples', 'validation', 'validator_flags']
-+    __KEYS = ['problem_name', 'probid', 'color', 'samples', 'validation', 'validator_flags', 'name']
++    __KEYS = ['problem_name', 'probid', 'color', 'samples', 'validation', 'validator_flags', 'name', 'timelimit']
      __VALIDATION = ['default', 'custom', 'custom interactive']
  
      def __init__(self, problem_name, problem_spec):
@@ -68,15 +70,16 @@ index a215ffc..262822b 100644
              raise ProblemConfigError('Invalid Problem Name "%s"' % problem_name)
          self.problem_name = problem_name
          self.probid = None
-@@ -32,6 +32,7 @@ class Problem(object):
+@@ -32,6 +32,8 @@ class Problem(object):
          self.samples = None
          self.validation = None
          self.validator_flags = None
 +        self.name = None
++        self.timelimit = None
          self.update(problem_spec)
  
      def update(self, values):
-@@ -80,8 +81,8 @@ class Problem(object):
+@@ -80,8 +82,8 @@ class Problem(object):
          """
          if self.probid is None:
              raise ProblemConfigError('problem %s has no probid' % self.problem_name)
