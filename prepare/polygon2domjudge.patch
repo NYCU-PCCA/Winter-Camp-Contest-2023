@@ -1,7 +1,16 @@
 diff --git a/p2d/main.py b/p2d/main.py
-index ad8cc5d..6c69b4f 100644
+index ad8cc5d..a1e2039 100644
 --- a/p2d/main.py
 +++ b/p2d/main.py
+@@ -70,7 +70,7 @@ class ProblemConfig(ProblemAspect):
+                 self.warning('Can not find config of %s, use default.' % problem.shortname)
+                 config = ProblemConfig.__DEFAULT_CONFIG
+             self._data = xml.etree.ElementTree.parse(self.configfile)
+-            self.name = self._data.find('names').find('name').attrib['value']
++            self.name = config.name or self._data.find('names').find('name').attrib['value']
+             self.timelimit = str(float(self._data.find('judging').find('testset').find('time-limit').text) / 1000.0)
+             self.checker = self._data.find('assets').find('checker')
+             self.interactor = self._data.find('assets').find('interactor')
 @@ -92,8 +92,9 @@ class ProblemConfig(ProblemAspect):
              '  probid = %s' % self.probid,
              '  name = %s' % self.name.replace("'", "`"),
@@ -13,28 +22,43 @@ index ad8cc5d..6c69b4f 100644
          [*map(self.info, ini_content)]
          with open(ini_file, 'w', encoding='utf-8') as f:
              f.writelines(map(lambda s: s.strip() + '\n', ini_content))
-@@ -141,7 +142,7 @@ class OutputValidator(ProblemAspect):
-                 self.info('Use custom interactor')
-                 data['validation'] = 'custom interactive'
+@@ -143,9 +144,9 @@ class OutputValidator(ProblemAspect):
                  yaml.safe_dump(data, yaml_file)
--                self._problem.ensure_dir('output_validators', 'interactor')
-+                self._problem.ensure_dir('output_validator', 'interactor')
+                 self._problem.ensure_dir('output_validators', 'interactor')
                  shutil.copyfile(testlib, os.path.join(self._problem.tmpdir,
-                                                       'output_validator', 'interactor', 'testlib.h'))
+-                                                      'output_validator', 'interactor', 'testlib.h'))
++                                                      'output_validators', 'interactor', 'testlib.h'))
                  shutil.copyfile(self._source, os.path.join(self._problem.tmpdir,
-@@ -165,7 +166,7 @@ class OutputValidator(ProblemAspect):
-                     self.info('Use custom checker')
-                     data['validation'] = 'custom'
+-                                                           'output_validator', 'interactor', 'interactor.cpp'))
++                                                           'output_validators', 'interactor', 'interactor.cpp'))
+             else:
+                 checker_name = Problem.checker_config.detect_checker(self._source)
+                 if self._source is None:
+@@ -167,9 +168,9 @@ class OutputValidator(ProblemAspect):
                      yaml.safe_dump(data, yaml_file, default_flow_style=False)
--                    self._problem.ensure_dir('output_validators', 'checker')
-+                    self._problem.ensure_dir('output_validator', 'checker')
+                     self._problem.ensure_dir('output_validators', 'checker')
                      shutil.copyfile(testlib, os.path.join(self._problem.tmpdir,
-                                                           'output_validator', 'checker', 'testlib.h'))
+-                                                          'output_validator', 'checker', 'testlib.h'))
++                                                          'output_validators', 'checker', 'testlib.h'))
                      shutil.copyfile(self._source, os.path.join(self._problem.tmpdir,
+-                                                               'output_validator', 'checker', 'interactor.cpp'))
++                                                               'output_validators', 'checker', 'interactor.cpp'))
+ 
+ 
+ class TestCases(ProblemAspect):
 diff --git a/p2d/problems.py b/p2d/problems.py
-index a215ffc..4352d5c 100644
+index a215ffc..262822b 100644
 --- a/p2d/problems.py
 +++ b/p2d/problems.py
+@@ -13,7 +13,7 @@ class Problem(object):
+     Class representing a single problem.
+     """
+ 
+-    __KEYS = ['problem_name', 'probid', 'color', 'samples', 'validation', 'validator_flags']
++    __KEYS = ['problem_name', 'probid', 'color', 'samples', 'validation', 'validator_flags', 'name']
+     __VALIDATION = ['default', 'custom', 'custom interactive']
+ 
+     def __init__(self, problem_name, problem_spec):
 @@ -24,7 +24,7 @@ class Problem(object):
              problem_spec (dict): dictionary containing the specification
                  of the problem.
@@ -44,7 +68,15 @@ index a215ffc..4352d5c 100644
              raise ProblemConfigError('Invalid Problem Name "%s"' % problem_name)
          self.problem_name = problem_name
          self.probid = None
-@@ -80,8 +80,8 @@ class Problem(object):
+@@ -32,6 +32,7 @@ class Problem(object):
+         self.samples = None
+         self.validation = None
+         self.validator_flags = None
++        self.name = None
+         self.update(problem_spec)
+ 
+     def update(self, values):
+@@ -80,8 +81,8 @@ class Problem(object):
          """
          if self.probid is None:
              raise ProblemConfigError('problem %s has no probid' % self.problem_name)

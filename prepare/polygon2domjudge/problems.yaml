@@ -1,42 +1,56 @@
 A:
   probid: pcca-2023-atcg
+  name: ATCG
   samples: 1
 B:
   probid: pcca-2023-shopping
+  name: Buying Mascots
   samples: 2
 C:
   probid: pcca-2023-tree-swap
+  name: Colorful Pictures
   samples: 3
 D:
   probid: pcca-2023-sort3
+  name: Duo of Magicians
   samples: 1
 E:
   probid: pcca-2023-exterior
+  name: Exterior
   samples: 3
 F:
   probid: pcca-2023-team-contest
+  name: Formidable Team
   samples: 1
 G:
   probid: pcca-2023-asm
+  name: Genetic Sequence Searching
   samples: 2
 H:
   probid: pcca-2023-relic
+  name: Heritage in the PCCA Kingdom
   samples: 3
 I:
   probid: pcca-2023-interval-cover
+  name: Interval Cover
   samples: 1
 J:
   probid: pcca-2023-match
+  name: Jewelry Box
   samples: 1
 K:
   probid: pcca-2023-abyss
+  name: K-restricted Induced Subgraphs
   samples: 3
 L:
   probid: pcca-2023-separation
+  name: Linear Classifers
   samples: 2
 M:
   probid: pcca-2023-grades
+  name: Mini Factorization Challenge
   samples: 2
 N:
   probid: pcca-2023-distinct-elements
+  name: Nancy's Numbers
   samples: 3
