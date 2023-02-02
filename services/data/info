@@ -1,0 +1,6 @@
+export SERVER=
+export SMTPSERVER=
+export SMTPPORT=
+export USER=
+export SENDER=
+export CC=

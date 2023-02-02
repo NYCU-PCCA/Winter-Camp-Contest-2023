@@ -1,0 +1,3 @@
+pcca.nycu.me
+tls root@x.pcca.nycu.me
+reverse_proxy domjudge:80

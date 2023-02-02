@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  cds:
+    image: docker.io/icpctools/cds:2.5.871
+    ports:
+      - 8443:8443
+    env_file:
+      - cds.env
+
+  proxy:
+    image: docker.io/caddy
+    hostname: proxy
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile

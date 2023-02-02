@@ -1,0 +1,67 @@
+version: '3'
+
+services:
+  mariadb:
+    image: docker.io/mariadb
+    hostname: mariadb
+    restart: unless-stopped
+    env_file:
+      - db.env
+    command: --max-connections=10000 --max-allowed-packet=512M
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      domjudge:
+
+  domjudge-internal:
+    image: docker.io/domjudge/domserver:8.1.3
+    hostname: domserver-internal
+    restart: unless-stopped
+    env_file:
+      - db.env
+      - domjudge.env
+    ports:
+      - 10.254.10.254:8888:80
+    depends_on:
+      - domjudge
+    networks:
+      domjudge:
+
+  domjudge:
+    image: docker.io/domjudge/domserver:8.1.3
+    hostname: domserver
+    restart: unless-stopped
+    env_file:
+      - db.env
+      - domjudge.env
+    depends_on:
+      - mariadb
+    networks:
+      domjudge:
+
+  proxy:
+    image: docker.io/caddy
+    hostname: proxy
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      domjudge:
+        ipv4_address: 172.12.23.44
+
+volumes:
+  db:
+  caddy_data:
+  caddy_config:
+
+networks:
+  domjudge:
+    ipam:
+      config:
+        - subnet: 172.12.23.0/24

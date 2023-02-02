@@ -1,0 +1,20 @@
+[
+    {
+        "type": "scoreboard",
+        "part": "long",
+        "periodMs": 15000,
+        "from": 1,
+        "to": 12
+    },
+    {
+        "type": "clock",
+        "part": "short",
+        "periodMs": 30000
+    },
+    {
+        "type": "text",
+        "part": "long",
+        "periodMs": 5000,
+        "text": "PCCA Winter Camp 2023"
+    }
+]

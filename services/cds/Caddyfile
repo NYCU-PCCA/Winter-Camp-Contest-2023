@@ -1,0 +1,8 @@
+:8080 {
+    log
+    reverse_proxy https://cds:8443 {
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
+}
