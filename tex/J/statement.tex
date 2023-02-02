@@ -9,8 +9,8 @@ In this problem, two cells are considered adjacent if they share an edge.
 
 For some reason, Jen would like to form some pairs of jewels.
 Each pair of jewels must be connected by a strand of rope, which may occupy some other cells of the jewelry box.
-More formally, suppose a strand of rope connects jewels located at $(a_1,b_1)$ and $(a_k,b_k)$, and then the rope can be seen as a sequence of $k$ cells $(a_1,b_1),(a_2,b_2),\ldots,(a_k,b_k)$.
-Each pair of consecutive cells must be adjacent, and all the $k$ cells should be distinct.
+More formally, suppose a strand of rope connects jewels located in $(a_1,b_1)$ and $(a_k,b_k)$, and then the rope can be viewed as a sequence of $k$ cells $(a_1,b_1),(a_2,b_2),\ldots,(a_k,b_k)$.
+Each pair of consecutive cells in the sequence must be adjacent, and all the $k$ cells should be distinct.
 Due to aesthetics, no jewels should be attached to more than one rope, and no two ropes should occupy the same cell.
 
 \newpage
@@ -18,7 +18,7 @@ Due to aesthetics, no jewels should be attached to more than one rope, and no tw
 \begin{figure}[h]
     \center
     \includegraphics[width=0.5\textwidth]{image/jewel1.png}
-    \caption{A valid configuration of jewels and ropes. There are $2$ pairs of jewels in the figure.}
+    \caption{A valid configuration of jewels and ropes. There are $2$ pairs of jewels in the figure: One pair is $(1,1),(2,3)$, and the other is $(1,5),(3,4)$.}
     \end{figure}
     \begin{figure}[h]
     \center

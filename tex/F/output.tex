@@ -3,7 +3,10 @@ In the $i$-th line of the following $m$ lines, print two integers $s_i,t_i$ deno
 
 Your solution will be considered correct if it satisfies all the following conditions:
 \begin{itemize}
-    \item All $t_i$ are distinct.
+    \item $1 \leq s_i \leq n$ for $i = 1,2,\ldots,n$
+    \item $s_i \neq s_j$ for $i \neq j$
+    \item $1 \leq t_i \leq m$ for $i = 1,2,\ldots,m$
+    \item $t_i \neq t_j$ for $i \neq j$
     \item $\displaystyle \sum_{i=1}^{m} a_{s_i,t_i} = k$
 \end{itemize}
 If there are multiple possible solutions, print any.

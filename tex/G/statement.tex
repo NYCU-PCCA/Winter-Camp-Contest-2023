@@ -2,8 +2,10 @@ Recently scientists have been looking into a new kind of pathogenic virus.
 To learn more about this virus, they did DNA sequencing on the samples and identified a typical pattern $t$ in all the virus samples.
 
 The scientists then want to identify the pattern in other DNA sequences.
-They just collected a DNA sequence $s$ from cells of other creatures and were eager to discover all the occurrences of $t$ in $s$.
+They just collected a DNA sequence $s$ from cells of other organisms and were eager to discover all the occurrences of $t$ in $s$.
 However, since DNA sequencing can go wrong, they want to find out the occurrences that differ in at most $1$ character.
 
 More formally, Let $s=s_1s_2\ldots s_{|s|}$ and $t = t_1t_2\ldots t_{|t|}$ are two DNA sequences.
-The scientists want to know all integer $i$ between $1$ and $|t|-|s|+1$, such that substrings $s_is_{i+1}\ldots s_{i+|t|-1}$ and $t_1t_2\ldots t_{|t|}$ have at most $1$ different character.
+The scientists want to know all integers $i$ between $1$ and $|t|-|s|+1$, such that substrings $s_is_{i+1}\ldots s_{i+|t|-1}$ and $t_1t_2\ldots t_{|t|}$ have at most $1$ different character.
+
+Note that unlike usual DNAs, $s$ and $t$ may contain characters other than \texttt{ATCG}.

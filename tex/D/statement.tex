@@ -3,14 +3,17 @@ Recently they came up with the following new trick for their next show.
 
 In the beginning, Neko-chan will invite an audience to write down a random permutation $a=[a_1,a_2,\ldots,a_n]$ of $1,2,\ldots,n$ without showing it to Laffey.
 After seeing the permutation, Neko-chan will hand out a deck of cards (at most $n$ cards, otherwise, it would be too apparent that they are cheating) to another audience.
-Neko-chan will ask the audience to shuffle the cards in any order and hand it to Laffey.
-Here comes the miracle: Laffey then can read out a sequence of operations to swap elements in $a$, and the array $a$ would be sorted in increasing order!
+Neko-chan will ask the new audience to shuffle the cards in any order and hand it to Laffey.
+Here comes the miracle: Laffey then can read out a sequence of operations to swap the elements in $a$, and the array $a$ will be sorted in increasing order!
 
 If you wonder how this trick works, here is the secret.
-After the array $a$ is written, Neko-chan secretly writes down a pair of integers $(x_i,y_i)$ on each card.
-The pair $(x_i,y_i)$ denotes that Laffey have to swap $a_{x_i}$ and $a_{y_i}$.
-When Laffey receives the deck of cards, she only has to sort the pairs on each card lexicographically and read out the sorted pairs.
-In other words, Neko-chan gives Laffey an array of integer pairs $op$ (which is also a sequence of operations); all Laffey has to do is sort $op$.
+After the permutation $a$ is written, Neko-chan secretly writes down a swapping operation on each card.
+Each operation is denoted as an integer pair $(x_i, y_i)$ meaning that Laffey has to swap $a_{x_i}$ and $a_{y_i}$.
+When Laffey receives the deck of cards, she only has to sort the pairs for each operation in ascending order and read out the sorted pairs.
 
-To make the trick work, Neko-chan requires an efficient algorithm to help him produce the array of pairs $op$.
+For example, suppose $a = [1,3,5,2,4]$ and Neko-chan writes down the pairs $(4,5),(2,3),(2,4)$.
+Then Laffey will read out $(2,3),(2,4),(4,5)$ one by one.
+As you can see, swapping the pairs $(a_2,a_3)$, $(a_2,a_4)$, $(a_4,a_5)$ in this order will sort the array $a$.
+
+To make the trick work, Neko-chan requires an efficient algorithm to help decide which operation should be written on each card.
 This task is too complex for Neko-chan. Can you help him?

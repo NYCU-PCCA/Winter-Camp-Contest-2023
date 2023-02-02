@@ -1,8 +1,8 @@
 As a PCCA winter camp staff member, you have been tasked with creating teams of $m$ members from a list of $n$ participants.
 Each participant has $m$ skills; the $i$-th participant has skill level $a_{i,j}$ for the $j$-th skill for $i = 1,2,\ldots,n$ and $j = 1,2,\ldots,m$.
 
-To facilitate team selection, you define the metrics for the skill levels.
+To facilitate team selection, you define the metrics for evaluating the teams' skills.
 For a team $b$ consisting of $m$ members $b_1,b_2,\ldots,b_m$, define the \textbf{strength} of $S$ as $\displaystyle\max_{p \in P_m} \sum_{i=1}^{m} a_{b_i,p_i}$, where $P_m$ is the set of all possible permutations of $1,2,\ldots,m$.
-That is, the strength of a team is the maximum possible sum of skill levels, considering all possible combinations of the skills from the $m$ team members.
+That is, the strength of a team is the maximum possible sum of skill levels, considering all possible combinations of the $m$ skills from the $m$ team members.
 
-Your goal is to find the best team by maximizing the team's strength.
+Your goal is to build a formidable team by maximizing the team's strength.
