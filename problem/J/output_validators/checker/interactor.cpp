@@ -7,7 +7,7 @@ using namespace std;
 
 int dir[][2]={{-1,0}, {0,1}, {1,0}, {0,-1}};
 char arr[102][102], aoi[102][102];
-bool vis[102][102], ouo[102][102][4];
+bool vis[102][102], ouo[102][102][4], flag_has_move;
 
 int sana(int a,int b)
 {
@@ -21,7 +21,7 @@ int sana(int a,int b)
 		d=b+dir[i][1];
 		
 		if((arr[a][b]=='#' || ouo[a][b][i]) && (ouo[c][d][(i+2)%4] || arr[c][d]=='#'))
-			res+=sana(c,d), cnt++;
+			res+=sana(c,d), cnt++, flag_has_move = true;
 	}
 	if(arr[a][b]=='#' && cnt>1)
 		res=-99999;
@@ -95,16 +95,30 @@ int main(int argc, char* argv[])
 			{
 				if(arr[i][j]=='#' && !vis[i][j])
 				{
+				    flag_has_move = false;
 					int a=sana(i,j);
+					if(!flag_has_move) continue;
+					
 					if(a==2)
 						cnt--;
-					else if(a<0)
+					else if(a==1)
+					    quitf(_wa, "only link one %d %d %d", T, i, j);
+					else
 						quitf(_wa, "invalidouo %d %d %d", T, i, j);
 				}
 			}
 		}
 		if(cnt)
 			quitf(_wa, "ohno %d %d", T, cnt);
+		
+		for(i=1;i<=n;i++)
+		{
+			for(j=1;j<=m;j++)
+			{
+				if('A'<=aoi[i][j] && aoi[i][j]<='F' && !vis[i][j])
+				    quitf(_wa, "stranded rope at %d %d %d", T, i, j);
+			}
+		}
 	}
 
 	inf.readEof();
