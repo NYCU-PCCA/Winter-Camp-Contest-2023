@@ -1,0 +1,423 @@
+{ "event_id":"cds12998",
+  "time":"2023-02-03T08:19:39.623Z",
+  "contest_time":"5:49:39.623",
+  "state": {"started":"2023-02-03T02:30:00.000Z","ended":"2023-02-03T07:30:00.000Z","frozen":"2023-02-03T06:30:00.000Z"},
+  "rows": [
+{"rank":1,"team_id":"34","score":{"num_solved":11,"total_time":1392},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":2},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":18},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":61},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":26},
+   {"problem_id":"19","num_judged":2,"num_pending":0,"solved":true,"time":271},
+   {"problem_id":"20","num_judged":2,"num_pending":0,"solved":true,"time":42},
+   {"problem_id":"21","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":53},
+   {"problem_id":"23","num_judged":2,"num_pending":0,"solved":true,"time":296},
+   {"problem_id":"25","num_judged":8,"num_pending":0,"solved":true,"first_to_solve":true,"time":245},
+   {"problem_id":"26","num_judged":1,"num_pending":0,"solved":true,"time":172},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":6}
+  ]},
+{"rank":2,"team_id":"24","score":{"num_solved":10,"total_time":1451},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":5},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":25},
+   {"problem_id":"16","num_judged":1,"num_pending":0,"solved":true,"time":244},
+   {"problem_id":"17","num_judged":3,"num_pending":0,"solved":true,"time":87},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":36},
+   {"problem_id":"19","num_judged":1,"num_pending":0,"solved":true,"time":269},
+   {"problem_id":"20","num_judged":5,"num_pending":0,"solved":true,"time":103},
+   {"problem_id":"22","num_judged":2,"num_pending":0,"solved":true,"time":250},
+   {"problem_id":"23","num_judged":2,"num_pending":0,"solved":true,"time":262},
+   {"problem_id":"24","num_judged":9,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":10}
+  ]},
+{"rank":3,"team_id":"58","score":{"num_solved":8,"total_time":755},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":4},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":22},
+   {"problem_id":"17","num_judged":3,"num_pending":0,"solved":true,"time":87},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":36},
+   {"problem_id":"19","num_judged":4,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"21","num_judged":1,"num_pending":0,"solved":true,"time":289},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":true,"time":139},
+   {"problem_id":"24","num_judged":1,"num_pending":0,"solved":true,"time":129},
+   {"problem_id":"26","num_judged":7,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":9}
+  ]},
+{"rank":4,"team_id":"27","score":{"num_solved":8,"total_time":882},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":7},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":28},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":45},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":57},
+   {"problem_id":"20","num_judged":6,"num_pending":0,"solved":true,"time":210},
+   {"problem_id":"21","num_judged":1,"num_pending":0,"solved":true,"time":156},
+   {"problem_id":"24","num_judged":2,"num_pending":0,"solved":true,"time":254},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":5}
+  ]},
+{"rank":5,"team_id":"31","score":{"num_solved":8,"total_time":1010},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":11},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":42},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":true,"time":72},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":17},
+   {"problem_id":"20","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":30},
+   {"problem_id":"21","num_judged":1,"num_pending":0,"solved":true,"time":197},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"24","num_judged":17,"num_pending":0,"solved":true,"time":299},
+   {"problem_id":"26","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":2}
+  ]},
+{"rank":6,"team_id":"71","score":{"num_solved":7,"total_time":465},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":8},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":26},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":41},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":29},
+   {"problem_id":"19","num_judged":4,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":1,"num_pending":0,"solved":true,"time":69},
+   {"problem_id":"21","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":true,"time":288},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":4}
+  ]},
+{"rank":7,"team_id":"66","score":{"num_solved":7,"total_time":485},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":7},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":33},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":69},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":55},
+   {"problem_id":"20","num_judged":1,"num_pending":0,"solved":true,"time":88},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":true,"time":215},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":18}
+  ]},
+{"rank":8,"team_id":"41","score":{"num_solved":7,"total_time":808},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":20},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":47},
+   {"problem_id":"16","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":56},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":83},
+   {"problem_id":"19","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":15,"num_pending":0,"solved":true,"time":219},
+   {"problem_id":"21","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"23","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"24","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":75},
+   {"problem_id":"26","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":28}
+  ]},
+{"rank":9,"team_id":"59","score":{"num_solved":6,"total_time":464},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":7},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":28},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":true,"time":74},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":44},
+   {"problem_id":"20","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"21","num_judged":2,"num_pending":0,"solved":true,"time":233},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":18}
+  ]},
+{"rank":10,"team_id":"49","score":{"num_solved":6,"total_time":505},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":8},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":25},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":91},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":58},
+   {"problem_id":"20","num_judged":6,"num_pending":0,"solved":false},
+   {"problem_id":"24","num_judged":2,"num_pending":0,"solved":true,"time":296},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":7}
+  ]},
+{"rank":11,"team_id":"72","score":{"num_solved":6,"total_time":510},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":7},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":97},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":true,"time":40},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":89},
+   {"problem_id":"20","num_judged":3,"num_pending":0,"solved":true,"time":162},
+   {"problem_id":"22","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"25","num_judged":4,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":55}
+  ]},
+{"rank":12,"team_id":"30","score":{"num_solved":6,"total_time":581},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":5},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":25},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":52},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":69},
+   {"problem_id":"20","num_judged":7,"num_pending":0,"solved":false},
+   {"problem_id":"21","num_judged":7,"num_pending":0,"solved":true,"time":241},
+   {"problem_id":"27","num_judged":3,"num_pending":0,"solved":true,"time":29}
+  ]},
+{"rank":13,"team_id":"33","score":{"num_solved":6,"total_time":602},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":3},
+   {"problem_id":"15","num_judged":2,"num_pending":0,"solved":true,"time":156},
+   {"problem_id":"16","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":79},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":69},
+   {"problem_id":"20","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"23","num_judged":2,"num_pending":0,"solved":true,"time":238},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":17}
+  ]},
+{"rank":14,"team_id":"74","score":{"num_solved":6,"total_time":674},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":46},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":73},
+   {"problem_id":"16","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":true,"time":98},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":115},
+   {"problem_id":"20","num_judged":4,"num_pending":0,"solved":true,"time":194},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":48}
+  ]},
+{"rank":15,"team_id":"38","score":{"num_solved":6,"total_time":1317},
+  "problems":[
+   {"problem_id":"16","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":160},
+   {"problem_id":"19","num_judged":2,"num_pending":0,"solved":true,"first_to_solve":true,"time":66},
+   {"problem_id":"22","num_judged":2,"num_pending":0,"solved":true,"first_to_solve":true,"time":128},
+   {"problem_id":"23","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":94},
+   {"problem_id":"24","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"25","num_judged":20,"num_pending":0,"solved":true,"time":284},
+   {"problem_id":"26","num_judged":3,"num_pending":0,"solved":true,"first_to_solve":true,"time":125}
+  ]},
+{"rank":16,"team_id":"55","score":{"num_solved":5,"total_time":151},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":5},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":10},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":59},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":35},
+   {"problem_id":"20","num_judged":7,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":22}
+  ]},
+{"rank":17,"team_id":"53","score":{"num_solved":5,"total_time":318},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":2},
+   {"problem_id":"15","num_judged":2,"num_pending":0,"solved":true,"time":54},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":83},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":154},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":5}
+  ]},
+{"rank":18,"team_id":"51","score":{"num_solved":5,"total_time":363},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":8},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":56},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"first_to_solve":true,"time":25},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":163},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":91}
+  ]},
+{"rank":19,"team_id":"22","score":{"num_solved":5,"total_time":393},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":43},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":51},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":69},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":131},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":79}
+  ]},
+{"rank":20,"team_id":"70","score":{"num_solved":5,"total_time":459},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":21},
+   {"problem_id":"15","num_judged":3,"num_pending":0,"solved":true,"time":113},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":107},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":173},
+   {"problem_id":"20","num_judged":14,"num_pending":0,"solved":false},
+   {"problem_id":"22","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"24","num_judged":7,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":5}
+  ]},
+{"rank":21,"team_id":"29","score":{"num_solved":5,"total_time":520},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":6},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":66},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":97},
+   {"problem_id":"18","num_judged":8,"num_pending":0,"solved":true,"time":199},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":12}
+  ]},
+{"rank":22,"team_id":"65","score":{"num_solved":4,"total_time":308},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":7},
+   {"problem_id":"15","num_judged":6,"num_pending":0,"solved":true,"time":92},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":27},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":62}
+  ]},
+{"rank":23,"team_id":"60","score":{"num_solved":4,"total_time":374},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":16},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":186},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":112},
+   {"problem_id":"18","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":60}
+  ]},
+{"rank":24,"team_id":"57","score":{"num_solved":4,"total_time":599},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":6},
+   {"problem_id":"17","num_judged":3,"num_pending":0,"solved":true,"time":246},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":true,"time":185},
+   {"problem_id":"20","num_judged":7,"num_pending":0,"solved":false},
+   {"problem_id":"21","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":4,"num_pending":0,"solved":true,"time":62}
+  ]},
+{"rank":25,"team_id":"73","score":{"num_solved":4,"total_time":670},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":76},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":250},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":149},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":4,"num_pending":0,"solved":true,"time":135}
+  ]},
+{"rank":26,"team_id":"37","score":{"num_solved":3,"total_time":210},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":11},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":114},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":true,"time":65}
+  ]},
+{"rank":27,"team_id":"46","score":{"num_solved":3,"total_time":215},
+  "problems":[
+   {"problem_id":"14","num_judged":2,"num_pending":0,"solved":true,"time":5},
+   {"problem_id":"15","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"17","num_judged":4,"num_pending":0,"solved":true,"time":73},
+   {"problem_id":"19","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":3,"num_pending":0,"solved":true,"time":17}
+  ]},
+{"rank":28,"team_id":"26","score":{"num_solved":3,"total_time":354},
+  "problems":[
+   {"problem_id":"14","num_judged":2,"num_pending":0,"solved":true,"time":9},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"16","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"17","num_judged":3,"num_pending":0,"solved":true,"time":186},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"19","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"21","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"22","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"23","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"24","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"25","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"26","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":3,"num_pending":0,"solved":true,"time":59}
+  ]},
+{"rank":29,"team_id":"40","score":{"num_solved":3,"total_time":364},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":47},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":204},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":113},
+   {"problem_id":"18","num_judged":8,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":11,"num_pending":0,"solved":false}
+  ]},
+{"rank":30,"team_id":"45","score":{"num_solved":3,"total_time":390},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":35},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":true,"time":185},
+   {"problem_id":"18","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":6,"num_pending":0,"solved":true,"time":70}
+  ]},
+{"rank":31,"team_id":"43","score":{"num_solved":3,"total_time":415},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":15},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":true,"time":220},
+   {"problem_id":"20","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"21","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":6,"num_pending":0,"solved":true,"time":60}
+  ]},
+{"rank":32,"team_id":"23","score":{"num_solved":3,"total_time":612},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":8},
+   {"problem_id":"17","num_judged":7,"num_pending":0,"solved":true,"time":257},
+   {"problem_id":"27","num_judged":8,"num_pending":0,"solved":true,"time":87}
+  ]},
+{"rank":33,"team_id":"44","score":{"num_solved":3,"total_time":882},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":21},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":true,"time":175},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":22,"num_pending":0,"solved":true,"time":266}
+  ]},
+{"rank":34,"team_id":"63","score":{"num_solved":2,"total_time":41},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":28},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"18","num_judged":15,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":true,"time":13}
+  ]},
+{"rank":35,"team_id":"47","score":{"num_solved":2,"total_time":151},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":10},
+   {"problem_id":"27","num_judged":5,"num_pending":0,"solved":true,"time":61}
+  ]},
+{"rank":36,"team_id":"52","score":{"num_solved":2,"total_time":179},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":21},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":true,"time":138},
+   {"problem_id":"18","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"24","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":8,"num_pending":0,"solved":false}
+  ]},
+{"rank":37,"team_id":"64","score":{"num_solved":2,"total_time":230},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":28},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":5,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":4,"num_pending":0,"solved":true,"time":142}
+  ]},
+{"rank":38,"team_id":"36","score":{"num_solved":2,"total_time":241},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":10},
+   {"problem_id":"17","num_judged":3,"num_pending":0,"solved":true,"time":191}
+  ]},
+{"rank":39,"team_id":"54","score":{"num_solved":2,"total_time":316},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":16},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":6,"num_pending":0,"solved":true,"time":200}
+  ]},
+{"rank":40,"team_id":"67","score":{"num_solved":1,"total_time":7},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":7},
+   {"problem_id":"17","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"18","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":6,"num_pending":0,"solved":false}
+  ]},
+{"rank":41,"team_id":"25","score":{"num_solved":1,"total_time":8},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":8},
+   {"problem_id":"17","num_judged":3,"num_pending":0,"solved":false},
+   {"problem_id":"18","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":1,"num_pending":0,"solved":false}
+  ]},
+{"rank":42,"team_id":"50","score":{"num_solved":1,"total_time":23},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":23},
+   {"problem_id":"15","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":4,"num_pending":0,"solved":false}
+  ]},
+{"rank":43,"team_id":"35","score":{"num_solved":1,"total_time":27},
+  "problems":[
+   {"problem_id":"14","num_judged":1,"num_pending":0,"solved":true,"time":27}
+  ]},
+{"rank":44,"team_id":"32","score":{"num_solved":1,"total_time":28},
+  "problems":[
+   {"problem_id":"14","num_judged":2,"num_pending":0,"solved":true,"time":8},
+   {"problem_id":"17","num_judged":2,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":11,"num_pending":0,"solved":false}
+  ]},
+{"rank":45,"team_id":"39","score":{"num_solved":1,"total_time":243},
+  "problems":[
+   {"problem_id":"14","num_judged":4,"num_pending":0,"solved":true,"time":183},
+   {"problem_id":"18","num_judged":1,"num_pending":0,"solved":false},
+   {"problem_id":"20","num_judged":4,"num_pending":0,"solved":false},
+   {"problem_id":"27","num_judged":2,"num_pending":0,"solved":false}
+  ]},
+{"rank":46,"team_id":"48","score":{"num_solved":0,"total_time":0},
+  "problems":[]},
+{"rank":46,"team_id":"42","score":{"num_solved":0,"total_time":0},
+  "problems":[]},
+{"rank":46,"team_id":"28","score":{"num_solved":0,"total_time":0},
+  "problems":[]},
+{"rank":46,"team_id":"56","score":{"num_solved":0,"total_time":0},
+  "problems":[]}
+]}
