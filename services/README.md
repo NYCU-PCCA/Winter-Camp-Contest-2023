@@ -1,3 +1,11 @@
+## Bugs
+
+- 要先在 domjudge finalize 才有 first solve
+- award.sh medal 設 0 傳不上去
+- live 的 Statistics 解題數量寬度錯誤 (finalize 前？
+
+## Network
+
 - DOMserver: 10.254.10.254 + public ip
 - judgehost: 10.254.10.1 ~ 
 
